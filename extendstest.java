@@ -63,13 +63,13 @@ class teacher{
 	
 }
 
-class student extends teacher{
+class student3 extends teacher{
 	private int id;
-	public student() {
+	public student3() {
 		
 	}
 	
-	public student(int a,String n,int i) {
+	public student3(int a,String n,int i) {
 		super(a,n);
 		this.id=i;
 	}
@@ -100,8 +100,8 @@ class student extends teacher{
 class tsetDemo {
 	public static void main(String[] args) {
 		teacher t=new teacher(45,"老黄",5000.0);
-		student s=new student(20,"小明",123);
-		student a=new student();
+		student3 s=new student3(20,"小明",123);
+		student3 a=new student3();
 		a.setName("小明");
 		a.setAge(21);
 		a.setId(678);
@@ -112,11 +112,11 @@ class tsetDemo {
 		s.sleep();
 		s.paySalary();
 		a.showing();
-		teacher y=new student(47,"老k",6500);
+		teacher y=new student3(47,"老k",6500);
 		System.out.println(y.salary);
 		y.getName();
 		y.eat();
-		student q=(student) y;
+		student3 q=(student3) y;
 		q.getId();
 	}	
 }
